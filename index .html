@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marius-Nicolae Bontea | Project & Operations Manager</title>
+  <meta name="description" content="Marius-Nicolae Bontea is a Project & Operations Manager with experience across social housing, facilities management, logistics and warehouse operations, supported by a First-Class BSc (Hons) in Computing." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind custom theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#1E3A5F',
+              dark: '#152A45',
+              light: '#2B4C77'
+            },
+            sand: {
+              DEFAULT: '#D2C1A8',
+              light: '#E8DFD0'
+            },
+            slatebg: '#F8FAFC'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(30,58,95,.18), transparent);
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background-color: #D2C1A8;
+      transition: width .25s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .card-hover {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px -18px rgba(30,58,95,.28);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- ================= STICKY NAVIGATION ================= -->
+  <header class="fixed top-0 left-0 z-50 w-full border-b border-slate-200/70 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-8">
+
+      <a href="#home" class="flex items-center gap-3">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-navy text-sm font-bold text-white">
+          MB
+        </span>
+        <span class="hidden text-sm font-semibold uppercase tracking-[0.18em] text-navy sm:block">
+          Marius-Nicolae Bontea
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-7 text-sm font-medium text-slate-600 lg:flex">
+        <a href="#about" class="nav-link hover:text-navy">About</a>
+        <a href="#experience" class="nav-link hover:text-navy">Experience</a>
+        <a href="#strengths" class="nav-link hover:text-navy">Core Strengths</a>
+        <a href="#digital-edge" class="nav-link hover:text-navy">Digital Edge</a>
+        <a href="#education" class="nav-link hover:text-navy">Education</a>
+        <a href="#contact" class="nav-link hover:text-navy">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="Marius_Bontea_CV.pdf"
+           class="hidden rounded-full border border-navy/20 px-4 py-2 text-sm font-semibold text-navy transition hover:border-navy hover:bg-navy hover:text-white md:inline-flex">
+          Download CV
+        </a>
+
+        <a href="#contact"
+           class="rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-navy-dark md:px-5">
+          Contact Me
+        </a>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="ml-1 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-navy lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile navigation -->
+    <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white px-5 pb-5 pt-3 lg:hidden">
+      <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
+        <a href="#about" class="hover:text-navy">About</a>
+        <a href="#experience" class="hover:text-navy">Experience</a>
+        <a href="#strengths" class="hover:text-navy">Core Strengths</a>
+        <a href="#digital-edge" class="hover:text-navy">Digital Edge</a>
+        <a href="#education" class="hover:text-navy">Education</a>
+        <a href="#contact" class="hover:text-navy">Contact</a>
+
+        <a href="Marius_Bontea_CV.pdf" class="mt-2 rounded-full border border-navy/20 px-4 py-2 text-center font-semibold text-navy">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="relative overflow-hidden bg-slatebg">
+      <div class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-sand/30 blur-3xl"></div>
+      <div class="pointer-events-none absolute -left-24 bottom-0 h-72 w-72 rounded-full bg-navy/10 blur-3xl"></div>
+
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 md:px-8 lg:grid-cols-[1.1fr_.9fr] lg:py-24">
+
+        <!-- Left: introduction -->
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full border border-navy/15 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-navy">
+            Project & Operations Management
+          </span>
+
+          <h1 class="mt-6 text-4xl font-extrabold leading-tight text-navy sm:text-5xl lg:text-6xl">
+            Marius-Nicolae Bontea
+          </h1>
+
+          <p class="mt-4 text-lg font-semibold text-slate-700 sm:text-xl">
+            Project & Operations Manager | Social Housing, Facilities & Logistics
+          </p>
+
+          <p class="mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+            I deliver end-to-end project and operational support across social housing, facilities management and logistics, with experience coordinating schedules, costs, suppliers, teams and compliance requirements. I combine hands-on operational leadership with a First-Class BSc (Hons) in Computing and practical automation skills to improve processes, support informed decisions and reduce avoidable operational effort.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="#contact"
+               class="rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-navy/20 transition hover:bg-navy-dark">
+              Get in Touch
+            </a>
+
+            <a href="#experience"
+               class="rounded-full border border-navy/20 bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy hover:bg-navy hover:text-white">
+              View Career Track Record
+            </a>
+          </div>
+
+          <div class="mt-8 flex flex-wrap items-center gap-4 text-sm font-medium text-slate-600">
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener"
+               class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 transition hover:border-navy hover:text-navy">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.3 8.65 22 10.6 22 14.2V21h-4v-6.1c0-1.55-.55-2.6-1.95-2.6-1.06 0-1.7.72-1.98 1.42-.1.25-.12.6-.12.95V21H9z"/>
+              </svg>
+              LinkedIn
+            </a>
+
+            <a href="https://github.com/Marius-Bontea/WCC-App"
+               target="_blank"
+               rel="noopener"
+               class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 transition hover:border-navy hover:text-navy">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.55v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.74 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.41-2.7 5.38-5.26 5.67.42.36.8 1.08.8 2.18v3.23c0 .3.2.66.8.55A11.5 11.5 0 0 0 12 .5z"/>
+              </svg>
+              GitHub — WCC App
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: profile photo -->
+        <div class="relative mx-auto w-full max-w-md lg:max-w-none">
+          <div class="absolute -right-4 -top-4 h-24 w-24 rounded-2xl bg-sand/60"></div>
+          <div class="absolute -bottom-5 -left-5 h-28 w-28 rounded-2xl border border-navy/10 bg-white"></div>
+
+          <div class="relative overflow-hidden rounded-3xl border border-white bg-white shadow-2xl shadow-navy/20">
+            <!-- Replace profile-photo.png with your local image file -->
+            <img
+              src="profile-photo.png"
+              alt="Marius-Nicolae Bontea, Project and Operations Manager"
+              class="h-[420px] w-full object-cover object-top sm:h-[500px] lg:h-[560px]"
+            />
+          </div>
+
+          <div class="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/60 bg-white/90 p-4 backdrop-blur">
+            <p class="text-xs font-semibold uppercase tracking-[0.16em] text-navy">
+              Based in Grays, UK
+            </p>
+            <p class="mt-1 text-sm text-slate-600">
+              Full UK Driving Licence (Category B) | Romanian native, English fluent
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXECUTIVE HIGHLIGHTS ================= -->
+    <section class="border-y border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-6 px-5 py-12 md:grid-cols-2 md:px-8 lg:grid-cols-4">
+
+        <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-6">
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-navy text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18M3 18h12" />
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-navy">End-to-End Delivery</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            Social housing voids, multi-site facilities management and logistics operations.
+          </p>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-6">
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-navy text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7l7-4z" />
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-navy">Safety & Compliance</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            SMSTS, asbestos awareness, fire safety and GDPR certified.
+          </p>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-6">
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-navy text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3z" />
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-navy">Academic Excellence</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            First-Class BSc (Hons) Computing and MSc International Business.
+          </p>
+        </div>
+
+        <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-6">
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-navy text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-navy">Recognition & Mobility</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            GEM Award nominee at Arcus FM | Full UK driving licence.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="bg-white py-20">
+      <div class="mx-auto max-w-7xl px-5 md:px-8">
+        <div class="grid gap-12 lg:grid-cols-[1fr_1.15fr]">
+
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-sand">
+              About
+            </p>
+
+            <h2 class="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+              Operational leadership with a practical digital advantage
+            </h2>
+
+            <div class="section-divider mt-6"></div>
+
+            <p class="mt-6 text-base leading-relaxed text-slate-600">
+              I bring operational and project experience across social housing, facilities management, logistics and warehouse environments. My work has involved coordinating void works from planning through handover, supporting multi-site facilities operations, managing stock and distribution activity, supervising teams and maintaining service standards.
+            </p>
+
+            <p class="mt-4 text-base leading-relaxed text-slate-600">
+              Alongside this operational foundation, I hold a First-Class BSc (Hons) in Computing and have developed practical tools including the Marcbase AI Tools Library, Courier Quote Calculator and WCC App. This combination enables me to approach operational challenges with both commercial awareness and a practical focus on process improvement.
+            </p>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-6">
+              <h3 class="text-lg font-bold text-navy">Project Delivery</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                Coordinated social housing void works from planning to handover, monitoring schedules, costs, quality and compliance.
+              </p>
+            </div>
+
+            <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-6">
+              <h3 class="text-lg font-bold text-navy">Multi-Site Operations</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                Supported facilities operations, team training, inventory, procurement, budgets and operational standards across sites.
+              </p>
+            </div>
+
+            <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-6">
+              <h3 class="text-lg font-bold text-navy">Commercial Control</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                Experience across supplier management, procurement, cost control, contract discussions and business administration.
+              </p>
+            </div>
+
+            <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-6">
+              <h3 class="text-lg font-bold text-navy">Technology-Enabled Improvement</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                Built digital tools to support quoting, routine maintenance and repetitive administrative processes.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="bg-slatebg py-20">
+      <div class="mx-auto max-w-7xl px-5 md:px-8">
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold uppercase tracking-[0.2em] text-sand">
+            Professional Experience
+          </p>
+
+          <h2 class="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+            Career track record
+          </h2>
+
+          <p class="mt-4 text-base leading-relaxed text-slate-600">
+            A progression across project coordination, facilities management, logistics, warehouse operations and business leadership.
+          </p>
+        </div>
+
+        <div class="relative mt-12">
+          <div class="absolute left-[18px] top-2 hidden h-[calc(100%-2rem)] w-px bg-navy/15 md:block"></div>
+
+          <div class="space-y-6">
+
+            <!-- Void Project Manager -->
+            <article class="card-hover relative rounded-2xl border border-slate-200 bg-white p-6 md:ml-14 md:p-8">
+              <div class="mb-4 flex flex-wrap items-center gap-3">
+                <span class="rounded-full bg-navy px-3 py-1 text-xs font-semibold text-white">
+                  Current Priority Role
+                </span>
+                <span class="text-sm font-medium text-slate-500">
+                  Jun 2023 – Jun 2024 | London, UK
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-navy">
+                Void Project Manager
+              </h3>
+              <p class="mt-1 text-sm font-semibold text-slate-600">
+                VSF1 Limited, subcontractor to Mears Group
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-600">
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Coordinated social housing void works from planning through to handover, monitoring schedules, costs, quality and compliance.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Coordinated operatives, subcontractors, suppliers and client stakeholders to support timely completion.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Supported procurement, resource planning, risk management and process improvements.
+                </li>
+              </ul>
+            </article>
+
+            <!-- Self-Employed -->
+            <article class="card-hover relative rounded-2xl border border-slate-200 bg-white p-6 md:ml-14 md:p-8">
+              <div class="mb-4 flex flex-wrap items-center gap-3">
+                <span class="rounded-full bg-sand px-3 py-1 text-xs font-bold text-navy">
+                  Current Role
+                </span>
+                <span class="text-sm font-medium text-slate-500">
+                  Jun 2024 – Present | London, UK
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-navy">
+                Self-Employed
+              </h3>
+              <p class="mt-1 text-sm font-semibold text-slate-600">
+                Courier Services & Digital Projects
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-600">
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Provide same-day collection and delivery services for business customers.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Developed the
+                  <a href="https://marcbaseai.free.nf/"
+                     target="_blank"
+                     rel="noopener"
+                     class="font-semibold text-navy underline decoration-sand decoration-2 underline-offset-4 transition hover:text-navy-light">
+                    Marcbase AI Tools Library
+                  </a>
+                  and
+                  <a href="https://courierquoutecalculator.free.nf/?i=2"
+                     target="_blank"
+                     rel="noopener"
+                     class="font-semibold text-navy underline decoration-sand decoration-2 underline-offset-4 transition hover:text-navy-light">
+                    Courier Quote Calculator
+                  </a>
+                  .
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Developed the
+                  <a href="https://github.com/Marius-Bontea/WCC-App"
+                     target="_blank"
+                     rel="noopener"
+                     class="font-semibold text-navy underline decoration-sand decoration-2 underline-offset-4 transition hover:text-navy-light">
+                    WCC App
+                  </a>
+                  , a Windows desktop tool for routine system maintenance and troubleshooting.
+                </li>
+              </ul>
+            </article>
+
+            <!-- Area Support Manager -->
+            <article class="card-hover relative rounded-2xl border border-slate-200 bg-white p-6 md:ml-14 md:p-8">
+              <div class="mb-4 flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-navy/15 bg-navy/5 px-3 py-1 text-xs font-semibold text-navy">
+                  Facilities Management
+                </span>
+                <span class="text-sm font-medium text-slate-500">
+                  May 2022 – May 2023 | Upminster, London
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-navy">
+                Area Support Manager
+              </h3>
+              <p class="mt-1 text-sm font-semibold text-slate-600">
+                Arcus FM
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-600">
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Supported multi-site facilities operations, team training and delivery of operational standards.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Coordinated inventory, procurement, suppliers, budgets and resource planning.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Supported health and safety compliance and was nominated for a GEM Award.
+                </li>
+              </ul>
+            </article>
+
+            <!-- Director -->
+            <article class="card-hover relative rounded-2xl border border-slate-200 bg-white p-6 md:ml-14 md:p-8">
+              <div class="mb-4 flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-navy/15 bg-navy/5 px-3 py-1 text-xs font-semibold text-navy">
+                  Business Leadership
+                </span>
+                <span class="text-sm font-medium text-slate-500">
+                  May 2021 – May 2022 | Grays, UK
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-navy">
+                Director
+              </h3>
+              <p class="mt-1 text-sm font-semibold text-slate-600">
+                Marcbase Limited
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-600">
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Managed courier operations, client relationships, service procedures and day-to-day business administration.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Supported contract discussions, financial management and business development.
+                </li>
+              </ul>
+            </article>
+
+            <!-- Warehouse Manager -->
+            <article class="card-hover relative rounded-2xl border border-slate-200 bg-white p-6 md:ml-14 md:p-8">
+              <div class="mb-4 flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-navy/15 bg-navy/5 px-3 py-1 text-xs font-semibold text-navy">
+                  Warehouse & Distribution
+                </span>
+                <span class="text-sm font-medium text-slate-500">
+                  Jan 2018 – May 2021 | London, UK
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-navy">
+                Warehouse Manager
+              </h3>
+              <p class="mt-1 text-sm font-semibold text-slate-600">
+                Juliana Maxime Interiors Ltd.
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-600">
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Managed warehouse operations, stock control, inventory, distribution and furniture delivery coordination.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Supervised warehouse staff and coordinated supplier and customer queries.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Maintained the company WordPress website and supported basic technical updates.
+                </li>
+              </ul>
+            </article>
+
+            <!-- Delivery Driver -->
+            <article class="card-hover relative rounded-2xl border border-slate-200 bg-white p-6 md:ml-14 md:p-8">
+              <div class="mb-4 flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-navy/15 bg-navy/5 px-3 py-1 text-xs font-semibold text-navy">
+                  Customer Delivery
+                </span>
+                <span class="text-sm font-medium text-slate-500">
+                  Jan 2017 – Jan 2018 | London, UK
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-navy">
+                Furniture Delivery Driver and Installer
+              </h3>
+              <p class="mt-1 text-sm font-semibold text-slate-600">
+                David Phillips Furniture Ltd.
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-600">
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Delivered and installed furniture, documented property conditions and reported damage where required.
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                  Provided customer-facing delivery and installation services across London.
+                </li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CORE STRENGTHS ================= -->
+    <section id="strengths" class="bg-white py-20">
+      <div class="mx-auto max-w-7xl px-5 md:px-8">
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold uppercase tracking-[0.2em] text-sand">
+            Core Strengths
+          </p>
+
+          <h2 class="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+            Operational & project competencies
+          </h2>
+
+          <p class="mt-4 text-base leading-relaxed text-slate-600">
+            A practical blend of delivery coordination, commercial control, compliance awareness and stakeholder communication.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+
+          <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-7">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 104 0M9 5h4m-6 7h8m-8 4h5" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-navy">Project & Programme Delivery</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Project Coordination</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Scheduling & Resource Planning</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Risk Management</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Quality Assurance</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Handover Compliance</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">AutoCAD Layouts</span>
+            </div>
+          </div>
+
+          <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-7">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 17h18M6 17V9m6 8V5m6 12v-6" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-navy">Operations & Commercial Control</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Multi-Site Operations</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Budget & Cost Control</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Procurement</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Supplier & Contractor Management</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Stock & Inventory Control</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Stakeholder Communication</span>
+            </div>
+          </div>
+
+          <div class="card-hover rounded-2xl border border-slate-200 bg-slatebg p-7">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-navy">Health, Safety & Governance</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">SMSTS</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Health & Safety Compliance</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Asbestos Awareness for Managers</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">Fire Safety & Prevention</span>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">GDPR & Data Protection</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIGITAL EDGE ================= -->
+    <section id="digital-edge" class="relative overflow-hidden bg-navy py-20 text-white">
+      <div class="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-sand/20 blur-3xl"></div>
+      <div class="pointer-events-none absolute -left-24 bottom-0 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+
+      <div class="relative mx-auto max-w-7xl px-5 md:px-8">
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold uppercase tracking-[0.2em] text-sand">
+            Digital Edge
+          </p>
+
+          <h2 class="mt-3 text-3xl font-extrabold leading-tight sm:text-4xl">
+            Technology & process automation advantage
+          </h2>
+
+          <p class="mt-4 text-base leading-relaxed text-slate-200">
+            My computing background is applied practically: building tools that support quoting, routine maintenance and repetitive administrative work.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+
+          <div class="card-hover rounded-2xl border border-white/15 bg-white/5 p-7 backdrop-blur">
+            <h3 class="text-lg font-bold text-sand">Process Automation & AI Tools</h3>
+
+            <ul class="mt-5 space-y-4 text-sm leading-relaxed text-slate-200">
+              <li class="flex gap-3">
+                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                Built the
+                <a href="https://marcbaseai.free.nf/"
+                   target="_blank"
+                   rel="noopener"
+                   class="font-semibold text-sand underline decoration-sand/50 underline-offset-4 transition hover:text-white">
+                  Marcbase AI Tools Library
+                </a>
+                to support automation of repetitive administrative tasks.
+              </li>
+
+              <li class="flex gap-3">
+                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                Developed the
+                <a href="https://courierquoutecalculator.free.nf/?i=2"
+                   target="_blank"
+                   rel="noopener"
+                   class="font-semibold text-sand underline decoration-sand/50 underline-offset-4 transition hover:text-white">
+                  Courier Quote Calculator
+                </a>
+                to support quoting processes.
+              </li>
+
+              <li class="flex gap-3">
+                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                Experienced with n8n and AI chatbot platforms.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-hover rounded-2xl border border-white/15 bg-white/5 p-7 backdrop-blur">
+            <h3 class="text-lg font-bold text-sand">IT & Systems Troubleshooting</h3>
+
+            <ul class="mt-5 space-y-4 text-sm leading-relaxed text-slate-200">
+              <li class="flex gap-3">
+                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                Developed the
+                <a href="https://github.com/Marius-Bontea/WCC-App"
+                   target="_blank"
+                   rel="noopener"
+                   class="font-semibold text-sand underline decoration-sand/50 underline-offset-4 transition hover:text-white">
+                  WCC App
+                </a>
+                , a .NET/WPF Windows maintenance utility for routine system maintenance and troubleshooting.
+              </li>
+
+              <li class="flex gap-3">
+                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                Holds Microsoft Azure Fundamentals and Microsoft Azure Administrator (CPD) training.
+              </li>
+
+              <li class="flex gap-3">
+                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sand"></span>
+                Working knowledge of SQL fundamentals, WordPress, Microsoft Project and AutoCAD.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION & CERTIFICATIONS ================= -->
+    <section id="education" class="bg-white py-20">
+      <div class="mx-auto max-w-7xl px-5 md:px-8">
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold uppercase tracking-[0.2em] text-sand">
+            Education & Certifications
+          </p>
+
+          <h2 class="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+            Academic and professional credentials
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-8 lg:grid-cols-2">
+
+          <div class="rounded-2xl border border-slate-200 bg-slatebg p-7">
+            <h3 class="text-lg font-bold text-navy">Academic Degrees</h3>
+            <div class="section-divider my-6"></div>
+
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-semibold text-slate-800">Master’s Degree in International Business</h4>
+                <p class="mt-1 text-sm text-slate-600">
+                  Lincoln Bishop University | 2025–2026
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-slate-800">BSc (Hons) Computing, First-Class Honours</h4>
+                <p class="mt-1 text-sm text-slate-600">
+                  Falmouth University | 2022–2023
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-slate-800">Pearson BTEC Higher National Diploma in Computing, Level 5</h4>
+                <p class="mt-1 text-sm text-slate-600">
+                  Icon College of Technology and Management | 2020–2022
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-slatebg p-7">
+            <h3 class="text-lg font-bold text-navy">Industry Certifications</h3>
+            <div class="section-divider my-6"></div>
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700">
+                SMSTS
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700">
+                Microsoft Project Management
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700">
+                Microsoft Azure Administrator (CPD)
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700">
+                Asbestos Awareness for Managers & Supervisors
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700">
+                Fire Safety, Protection & Prevention
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700">
+                GDPR & Data Protection
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700">
+                Introduction to CCTV Systems
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700">
+                AutoCAD Layouts & Design
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-700 sm:col-span-2">
+                TQUK Level 2 Certificate in Digital Marketing
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="bg-slatebg py-20">
+      <div class="mx-auto max-w-7xl px-5 md:px-8">
+        <div class="grid gap-12 lg:grid-cols-[1fr_1.1fr]">
+
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-sand">
+              Contact
+            </p>
+
+            <h2 class="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+              Let’s discuss your next operational or project requirement
+            </h2>
+
+            <p class="mt-4 text-base leading-relaxed text-slate-600">
+              I am open to Project Manager and Operations Manager opportunities across social housing, facilities management, logistics and operations-focused organisations in the UK.
+            </p>
+
+            <div class="mt-8 space-y-4">
+              <div class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5">
+                <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-navy">Location</p>
+                  <p class="text-sm text-slate-600">Grays, RM16, United Kingdom</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5">
+                <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3l2 5-2 1a11 11 0 005 5l1-2 5 2v3a2 2 0 01-2 2A16 16 0 013 5z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-navy">Phone</p>
+                  <a href="tel:+447475941891" class="text-sm text-slate-600 hover:text-navy">
+                    07475 941891
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5">
+                <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M3 6h18v12H3z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-navy">Email</p>
+                  <a href="mailto:mariusbontea1985@gmail.com" class="text-sm text-slate-600 hover:text-navy">
+                    mariusbontea1985@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-xl shadow-navy/5 sm:p-9">
+            <h3 class="text-xl font-bold text-navy">Send a message</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Suitable for recruiters, hiring managers and business enquiries.
+            </p>
+
+            <form id="contact-form" class="mt-7 space-y-5">
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="name" class="mb-2 block text-sm font-semibold text-slate-700">Full name</label>
+                  <input id="name" name="name" type="text" required
+                         class="w-full rounded-xl border border-slate-200 bg-slatebg px-4 py-3 text-sm outline-none transition focus:border-navy focus:bg-white"
+                         placeholder="Your full name" />
+                </div>
+
+                <div>
+                  <label for="email" class="mb-2 block text-sm font-semibold text-slate-700">Email address</label>
+                  <input id="email" name="email" type="email" required
+                         class="w-full rounded-xl border border-slate-200 bg-slatebg px-4 py-3 text-sm outline-none transition focus:border-navy focus:bg-white"
+                         placeholder="you@company.com" />
+                </div>
+              </div>
+
+              <div>
+                <label for="company" class="mb-2 block text-sm font-semibold text-slate-700">Company / Organisation</label>
+                <input id="company" name="company" type="text"
+                       class="w-full rounded-xl border border-slate-200 bg-slatebg px-4 py-3 text-sm outline-none transition focus:border-navy focus:bg-white"
+                       placeholder="Company name" />
+              </div>
+
+              <div>
+                <label for="message" class="mb-2 block text-sm font-semibold text-slate-700">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                          class="w-full rounded-xl border border-slate-200 bg-slatebg px-4 py-3 text-sm outline-none transition focus:border-navy focus:bg-white"
+                          placeholder="Please share the role, organisation and any relevant details."></textarea>
+              </div>
+
+              <button type="submit"
+                      class="w-full rounded-full bg-navy px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-navy-dark">
+                Send Message
+              </button>
+
+              <p class="text-center text-xs text-slate-500">
+                Clicking Send Message opens your email app with the message prepared for Marius.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-slate-200 bg-white py-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center sm:flex-row sm:text-left md:px-8">
+      <p class="text-sm text-slate-600">
+        © <span id="year"></span> Marius-Nicolae Bontea. All rights reserved.
+      </p>
+
+      <p class="text-sm text-slate-500">
+        Project & Operations Manager | Social Housing, Facilities & Logistics
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is selected
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Dynamic copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form: opens visitor's email app and prepares message for Marius
+    const contactForm = document.getElementById('contact-form');
+
+    contactForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const recipient = 'mariusbontea1985@gmail.com';
+      const subject = encodeURIComponent('Portfolio enquiry from ' + name);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Company / Organisation: ' + (company || 'Not provided') + '\n\n' +
+        'Message:\n' + message
+      );
+
+      window.location.href = 'mailto:' + recipient + '?subject=' + subject + '&body=' + body;
+    });
+  </script>
+
+</body>
+</html>
